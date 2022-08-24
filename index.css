@@ -9,40 +9,46 @@
     color: black;
     box-sizing: border-box;
 }
+.color{
+    color: black;
+}
 #header{
     
     height:126.458px;
-    width:1550px;
+    width:100%;
     padding: 20px 0;
-    position:relative;
+    position:fixed;
     display: block;
     border: 1px solid red;
     box-sizing: border-box;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position:sticky;
+    top: 0;
+    background-color: white;
     /* box-shadow: rgba(0,0,0,0.2) 0px 0px 1px 0px; */
 }
 #upper{
     height:86.4583px;
-    width:1500px;
+    width:100%;
     padding: 0 25px;
     max-width: 1500px;
 }
 #top-upper-section{
     display: flex;
     height:50.6667px;
-    width:1450px;
+    width:100%;
     justify-content: center;
 }
 #top-upper-section>div{
     display: flex;
 }
 #top-upper-section>div{
-    width:200px;
+    width:5%;
     height:50.667px;
     display: flex;
     min-height: auto;
     max-width: auto;
-    z-index: 1;
+    /* z-index: 1; */
 }
 #top-upper-section>div>img{
     display:block;
@@ -55,7 +61,7 @@
     width: 595px;
     min-width: auto;
     min-height: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
 }
 #loged a{
@@ -65,6 +71,7 @@
     display: block;
     cursor: pointer;
     margin-left: 500px;
+    color: black;
 }
 #loged a+a{
     margin-left: 30px;
@@ -85,4 +92,41 @@
     vertical-align: middle;
     white-space: nowrap;
     padding-left: 30px;
+}
+.nxt{
+    text-align: center;
+    border:1px solid red;
+    margin-bottom: 0px;
+    background-color: black;
+    margin-top: 5px;
+}
+.nxt a,strong{
+    color: white;
+    padding:5px 5px;
+}
+.carousel-item{
+    height:32rem;
+    background: #777;
+    color:white;
+    position:relative;
+    margin-top:0px;
+    background-position: center;
+    background-size: cover;
+}
+.container h1,p{
+    color: white;
+}
+.container{
+    position: absolute;
+    left:0;
+    right: 0;
+    text-align: center;
+    margin-top: 200px;
+}
+.container h1{
+    font-size: 40px;
+}
+#myCarousel{
+    margin-top: 0px;
+    border: 2px solid green;
 }
