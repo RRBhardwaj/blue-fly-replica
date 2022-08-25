@@ -1,0 +1,160 @@
+*{  
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    line-height: 25.6px;
+    text-decoration: none solid rgb(0,0,0);
+    color: black;
+    box-sizing: border-box;
+}
+.color{
+    color: black;
+}
+#header{
+    
+    height:126.458px;
+    width:100%;
+    padding: 20px 0;
+    border: 1px solid red;
+    box-sizing: border-box;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position:relative;
+    top: 0;
+    background-color: white;
+    /* box-shadow: rgba(0,0,0,0.2) 0px 0px 1px 0px; */
+}
+#upper{
+    height:86.4583px;
+    width:100%;
+    padding: 0 25px;
+    max-width: 1500px;
+    position: absolute;
+}
+#top-upper-section{
+    display: flex;
+    height:50.6667px;
+    width:100%;
+    justify-content: center;
+}
+#top-upper-section>div{
+    display: flex;
+}
+#top-upper-section>div{
+    width:5%;
+    height:50.667px;
+    display: flex;
+    min-height: auto;
+    max-width: auto;
+    /* z-index: 1; */
+}
+#top-upper-section>div>img{
+    display:block;
+    height:30.667px;
+    font-size: 30px;
+    line-height: 30px;
+}
+#loged{
+    height:43px;
+    width: 595px;
+    min-width: auto;
+    min-height: auto;
+    /* border: 1px solid red; */
+    
+}
+#loged a{
+    height: 43px;
+    width:52px;
+    padding:8px 12px;
+    display: block;
+    cursor: pointer;
+    margin-left: 500px;
+    color: black;
+}
+#loged a+a{
+    margin-left: 30px;
+}
+#top-bottom-section{
+    display: block;
+    height:35.7917px;
+    width:1450px;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 10px;
+}
+#top-bottom-section a{
+    font-size: 13px;
+    letter-spacing: 2.6px;
+    line-height: 20.8px;
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 30px;
+}
+.nxt{
+    text-align: center;
+    border:1px solid red;
+    margin-bottom: 0px;
+    background-color: black;
+}
+.nxt a,strong{
+    color: white;
+    padding:5px 5px;
+}
+.carousel-item{
+    height:32rem;
+    background: #777;
+    color:white;
+    margin-top:0px;
+    background-position: center;
+    background-size: cover;
+}
+.container h1,p{
+    color: white;
+}
+.container{
+    text-align: center;
+    margin-top: 200px;
+}
+.container h1{
+    font-size: 40px;
+}
+#myCarousel{
+    position:relative;
+    margin-top: 0px;
+    border: 2px solid green;
+}
+#gridFirst{
+    border: 1px solid red;
+    height:400px;
+    width:95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px 30px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.model{
+    height:26rem;
+    background: #777;
+    color:white;
+    margin-top:0px;
+    background-position: center;
+    background-size: cover;
+
+}
+.containers{
+    text-align: center;
+    color:white;
+    padding-top: 10px;
+}
+.containers h1{
+    font-size: 40px;
+    color: white;
+}
+.containers h2{
+    font-size: 25px;
+    color: white;
+}
