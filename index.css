@@ -13,24 +13,22 @@
     color: black;
 }
 #header{
-    
     height:126.458px;
     width:100%;
     padding: 20px 0;
     border: 1px solid red;
     box-sizing: border-box;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    position:relative;
+    position:sticky;
     top: 0;
     background-color: white;
-    /* box-shadow: rgba(0,0,0,0.2) 0px 0px 1px 0px; */
+    z-index: 1;
 }
 #upper{
     height:86.4583px;
     width:100%;
     padding: 0 25px;
-    max-width: 1500px;
-    position: absolute;
+    max-width: 100%;
 }
 #top-upper-section{
     display: flex;
@@ -38,47 +36,15 @@
     width:100%;
     justify-content: center;
 }
-#top-upper-section>div{
-    display: flex;
-}
-#top-upper-section>div{
-    width:5%;
-    height:50.667px;
-    display: flex;
-    min-height: auto;
-    max-width: auto;
-    /* z-index: 1; */
-}
 #top-upper-section>div>img{
-    display:block;
     height:30.667px;
     font-size: 30px;
     line-height: 30px;
 }
-#loged{
-    height:43px;
-    width: 595px;
-    min-width: auto;
-    min-height: auto;
-    /* border: 1px solid red; */
-    
-}
-#loged a{
-    height: 43px;
-    width:52px;
-    padding:8px 12px;
-    display: block;
-    cursor: pointer;
-    margin-left: 500px;
-    color: black;
-}
-#loged a+a{
-    margin-left: 30px;
-}
 #top-bottom-section{
     display: block;
     height:35.7917px;
-    width:1450px;
+    width:100%;
     list-style-type: disc;
     list-style-position: outside;
     margin-left: 10px;
@@ -120,13 +86,13 @@
     font-size: 40px;
 }
 #myCarousel{
-    position:relative;
     margin-top: 0px;
-    border: 2px solid green;
+    /* border: 2px solid green; */
+    /* display: block; */
 }
 #gridFirst{
     border: 1px solid red;
-    height:400px;
+    height: 483px;
     width:95%;
     margin: auto;
     display: grid;
@@ -137,24 +103,60 @@
     margin-bottom: 40px;
 }
 .model{
-    height:26rem;
+    height:480px;
     background: #777;
     color:white;
     margin-top:0px;
     background-position: center;
     background-size: cover;
-
 }
 .containers{
-    text-align: center;
+    text-align: justify;
     color:white;
-    padding-top: 10px;
-}
-.containers h1{
-    font-size: 40px;
-    color: white;
+    margin-top: 50%;
+    margin-left: 20px;
+    text-align: center;
 }
 .containers h2{
+    color: white;
+    text-align: center;
+    
+}
+.containers h3{
     font-size: 25px;
     color: white;
+    text-align: center;
+}
+#gridSecond{
+    border:2px solid red;
+    width:100%;
+    height:720px;
+}
+#gridSecond>h1{
+    text-align: center;
+    font-size: 32.68px;
+    line-height: 32.68px;
+    font-family: tiemann,serif;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+#category{
+    border: 1px solid red;
+    height:660px;
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,250px);
+    gap:20px 30px;
+    justify-content: space-evenly;
+    margin:20px
+}
+.fitImage{
+    display: block;
+    background: #777;
+    color:white;
+    margin-top:0px;
+    background-position: center;
+    background-size: cover;
 }
