@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><u>CART PAGE WOMEN</u></h1>
+    <h1>Total Item : <span id="total-items"></span></h1>
+    <h1>Total Amount : <span id="total_amount"></span></h1>
+    <div id="container"></div>
+    
+</body>
+</html>
+
+<script>
+    let product=JSON.parse(localStorage.getItem("cart")) || [];
+    console.log(product);
+    document.querySelector("#total-items").innerText=product.length;
+
+    let total=product.reduce(function(acc,el,i){
+        return acc+ Number(el.price);
+    },0);
+    // console.log(total);
+    document.querySelector("#total_amount").innerText= total;
+    
+    product.map(function(elem,i){
+        // console.log(elem);
+        let box=document.createElement("div");
+        document.querySelector("#container").append(box);
+
+        let image_new=document.createElement("img");
+        image_new.setAttribute("src",elem.image_url);
+
+        let para1=document.createElement("p");
+        para1.innerText=elem.name;
+
+        let priceNew=document.createElement("p");
+        priceNew.innerText=elem.price;
+        
+        box.append(image_new,para1,priceNew);
+
+
+
+    })
+</script>
