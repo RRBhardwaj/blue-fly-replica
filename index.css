@@ -282,9 +282,10 @@
     gap:20px;
     margin:auto;
     padding:20px;
+    margin-top: 20px;
 }
 #square{
-    border:1px solid red;
+    border:1px solid #E6E6E6;
     padding:20px;
 }
 #rectangle{
@@ -329,8 +330,104 @@
     font-size: 12px;
     margin-top: 14px;
 }
+#submit{
+    margin-top: 5px;
+    padding:0px 60px;
+    background-color: black;
+    color: white;
+}
 
-/* 
-@media all and (min-width) and (max-width){
 
-} */
+@media all and (min-width: 678px) and (max-width: 948px) {
+    #gridFirst{
+        border: none;
+        height: 640px;
+        width:95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,210px);
+        gap:20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .model{
+        height:205px;
+        color:white;
+        margin-top:0px;
+        background-position: center;
+        background-size: cover;
+    }
+    .containers{
+        color:white;
+        margin-top:5%;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .containers h3{
+        font-size: 15px;
+    }
+    .containers a{
+        font-size: 15px;
+        border-radius: 0px;
+    }
+    #category{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(5,250px);
+        gap:20px;
+        margin:20px;
+    }
+    #category h6{
+        font-size: 13px;
+    }
+    #gridFourth{
+        height:auto;
+        margin: auto;
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,520px);
+        gap: 20px;
+        padding:20px;
+        text-align: center;
+    }
+    #gridFourth button{
+        font-size: 13px;
+        letter-spacing:3.6px;
+    }
+    #gridFourth img{
+        height:430px;
+        width:100%;
+        margin-bottom: 10px;
+    }
+    #gridFourth button{
+        border-radius: 0px;
+        border-color:#E6E6E6;
+    }
+    #footer{
+        height:500px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 200px;
+    }
+    .barca p{
+        font-size: 10px;
+        color:black;
+    }
+    #rectangle img{
+        margin-left: 35%;
+        margin-top: 10px;
+    }
+    #square p{
+        font-size: 11px;
+    }
+    #rectangle p{
+        color:black;
+        font-size: 10px;
+    }
+    #rectangle>div+div{
+        margin-left: 22%;
+    }
+    
+}

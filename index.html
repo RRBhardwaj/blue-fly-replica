@@ -22,7 +22,6 @@
                 <a class="color"  href="#sunglasses">SUNGLASSES</a>
                 <a class="color"  href="#jewelry">JEWELRY & WATCHES</a>
                 <a class="color"  href="#under">UNDER $50</a>
-                <a class="color"  href="#beauty">BEAUTY</a>
                 <a class="color"  href="./Shopping.html">SHOPPING</a>
             </div>
         </div>
@@ -265,7 +264,7 @@
             <button class="btn btn-light btn-outline-dark" style="background-color: white;">SHOP DENIM</button>
         </div>
         <div>
-            <img src="https://images.unsplash.com/photo-1521577352947-9bb58764b69a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHJvbXBlcnMlMjBtb2RlbHxlbnwwfDF8MHx8&auto=format&fit=crop&w=500&q=60"/>
+            <img src="img/MOdel1.jpg"/>
             <h4>UPTO 90% OFF TRENDING JUMSUITS & ROMPERS</h4>
             <h6>Must-Haves From Halston, BCBGMAXAZRIA, Iro & More</h6>
             <button class="btn btn-light btn-outline-dark" style="background-color: white;">SHOP JUMPSUITS</button>
@@ -292,7 +291,12 @@
             </div>
         </div>
         <div id="square">
-            <div class=""></div>
+            <form>
+                <h2 style="font-size: 15px;letter-spacing: 4.5px;">SIGN UP AND SAVE</h2>
+                <p style="color:black;">Subscribe to get exclusive offers on designer brands</p>
+                <input id="email" placeholder="Enter your email" type="text" /><br/>
+                <input id="submit" type="submit" value="Subscribe" />
+            </form>
         </div>
         <div id="rectangle">
             <div><img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820"/></div>
@@ -303,3 +307,25 @@
 </html>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script>
+    document.querySelector("form").addEventListener("submit",storingData);
+    let storeData=JSON.parse(localStorage.getItem("subscribe")) || [];
+  
+    function storingData(){
+      event.preventDefault();
+      let email=document.querySelector("#email").value;
+  
+      let obj={
+        email
+      }
+      storeData.push(obj);
+      localStorage.setItem("subscribe",JSON.stringify(storeData));
+  
+    }
+  
+  
+  
+  
+  
+  
+  </script>
